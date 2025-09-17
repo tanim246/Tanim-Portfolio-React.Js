@@ -17,7 +17,7 @@ const StyledWrapper = styled.div`
    
     border: 0;
     border-radius: 4px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-shadow: ;
     box-sizing: border-box;
     color: white;
     display: flex;
@@ -42,7 +42,7 @@ const StyledWrapper = styled.div`
   }
 
   button span {
-    background-color: rgb(5, 6, 45);
+    background-color: ;
     padding: 16px 24px;
     border-radius: 6px;
     width: 100%;

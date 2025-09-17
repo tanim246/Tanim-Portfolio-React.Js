@@ -3,13 +3,18 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { SlLocationPin } from "react-icons/sl";
 import { PiPhoneCallLight } from "react-icons/pi";
 import { FaRegClock } from "react-icons/fa";
+import { GoNorthStar } from "react-icons/go";
+import { GiFlatStar } from "react-icons/gi";
 
 const Contact = () => {
   return (
     <div className="max-w-6xl pb-8 text-white mx-auto px-4 sm:px-8">
       <div className="flex flex-col items-center gap-6 text-center sm:text-left">
-        <p className="rounded-full border py-1 px-6 sm:px-10 border-[#0b4357] bg-[#0e2638] text-[#64e2f5]">
-          Get In Touch
+        <p className="rounded-full flex justify-center items-center gap-3 border py-1 px-6 sm:px-10 border-[#0b4357] bg-[#0e2638] text-[#64e2f5]">
+          <span>
+            <GiFlatStar />
+          </span>
+          <span> Get In Touch</span>
         </p>
         <h1 className="text-3xl sm:text-5xl font-bold text-[#64e2f5]">
           Let's Work Together
@@ -81,6 +86,23 @@ const Contact = () => {
                 <span className="font-semibold">Response Time</span>
                 <span className="text-[#878f9c]">
                   Typically within 24 hours
+                </span>
+              </p>
+            </div>
+            {/*  Quick Response*/}
+            <div className="border  border-[#303a4d] p-4 rounded-xl flex i gap-4 bg-[#142130]">
+              <p className="space-y-1">
+                <p className="flex items-center gap-3">
+                  {" "}
+                  <span className="text-[#f7bc25] text-2xl">
+                    <GoNorthStar />
+                  </span>
+                  <span className="font-semibold">Quick Response</span>
+                </p>
+                <span className="text-[#878f9c]">
+                  I prioritize all incoming messages and strive to respond
+                  within 24 hours. For urgent matters, feel free to call or
+                  WhatsApp directly.
                 </span>
               </p>
             </div>

@@ -2,13 +2,13 @@ import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { PiReadCvLogo } from "react-icons/pi";
 import Button from "./buttons/HeroBtn";
-// import  heroImg from "../public/Images/heroInfo.png"
-
+import Button2 from "./buttons/MyCode";
+import tanim from "../public/Images/myimg.jpg"
 const App = () => {
   return (
-    <div>
-      <div className="max-w-6xl mx-auto mt-25 h-[400px]">
-        <div className="space-y-7 ml-5 sm:ml-0">
+    <div className=" max-w-6xl mx-auto ">
+      <div className=" flex flex-col-reverse gap-8 justify-between items-center sm:flex-row  sm:mt-25">
+        <div className="space-y-7 ml-5 sm:ml-0  relative">
           <p className="text-5xl flex space-y-3 flex-col font-bold">
             {" "}
             <span className="">Hello, It's Me</span>
@@ -18,12 +18,9 @@ const App = () => {
           <p className="text-md sm:text-xl">JavaScript lover 🚀 | Engineering the Future of Web Technology</p>
           <div className="flex gap-6 ">
             <div><Button /></div>
-            <button className="flex items-center text-gray-300 justify-center rounded-[6px] border-2 border-[#353f4f] px-6 gap-2 bg-[#111826] cursor-pointer   ">
-              <span>Download CV</span>
-              <span>
-                <PiReadCvLogo />
-              </span>{" "}
-            </button>
+            <div>
+              <span><Button2 /></span>
+            </div>
           </div>
           <div className="flex text-2xl gap-4">
             <span className="p-2 border border-[#4ecca2] cursor-pointer text-[#4ecca2] hover:bg-[#4ecca2] hover:text-black  rounded-full">
@@ -42,9 +39,14 @@ const App = () => {
               <FaSquareInstagram />
             </span>
           </div>
+          {/* position */}
+          <span className="border absolute animate-bounce  left-40 top-[-40px] rounded-lg border-[#29214a] bg-[#1c1c3b] text-[#b87ef2] py-2 px-6 ">Development Magic</span>
+          <span className="border absolute animate-bounce hidden sm:block right-[-50px] bottom-48 rounded-lg border-[#3d3723] bg-[#252625] text-[#e6b225] py-2 px-6 ">Innovation</span>
+          <span className="border absolute animate-bounce  hidden sm:block right-[-100px] top-0 rounded-lg border-[#142645] bg-[#12203b] text-[#5a9ced] py-2 px-6 ">Clean Code</span>
         </div>
-        <div className="">
-         
+        {/* right part */}
+        <div className="border-2 border-[#06b6c9] rounded-full p-4 mr-5 ">
+         <img src={tanim} alt="tanim" className="rounded-full" width="300px" />
          
         </div>
       </div>
