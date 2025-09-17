@@ -1,39 +1,43 @@
-import React from "react";
-import styled from "styled-components";
 
+import styled from "styled-components";
 const Form = () => {
   return (
     <StyledWrapper>
-      <form className="form w-[550px]">
+      <form className="form w-full max-w-[550px] mx-auto">
         <p className="title">Send a Message </p>
 
-        <div className=" flex justify-between">
-          <label className=" w-full">
-            <input className="input " type="text" placeholder required />
+        <div className="flex flex-col sm:flex-row gap-3">
+          <label className="w-full">
+            <input className="input" type="text" placeholder required />
             <span>Name</span>
           </label>
           <label className="w-full">
-            <input className="input " type="email" placeholder required />
+            <input className="input" type="email" placeholder required />
             <span>Email</span>
           </label>
         </div>
+
         <label>
-          <input className="input  " type="text" placeholder required />
+          <input className="input" type="text" placeholder required />
           <span>Subject</span>
         </label>
+
         <label>
           <textarea
             className="input h-[200px] message-textarea"
-            placeholder required
+            placeholder
+            required
           ></textarea>
           <span>Your Message</span>
         </label>
 
         <button className="submit">Send Message</button>
       </form>
-       <p className="border text-xs text-center text-[#878f9c] bg-[#141d30] mt-4 border-[#303a4d] rounded-xl  p-5">
-          Your information is secure and will only be used to respond to your inquiry
-        </p>
+
+      <p className="border text-xs text-center text-[#878f9c] bg-[#141d30] mt-4 border-[#303a4d] rounded-xl p-5">
+        Your information is secure and will only be used to respond to your
+        inquiry
+      </p>
     </StyledWrapper>
   );
 };
@@ -43,7 +47,6 @@ const StyledWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
-
     padding: 40px 30px;
     border-radius: 20px;
     position: relative;
@@ -60,18 +63,7 @@ const StyledWrapper = styled.div`
     display: flex;
     align-items: center;
     padding-left: 30px;
-    color: #00bfff;
-  }
-
-  .title::before {
-    width: 18px;
-    height: 18px;
-  }
-
-  .title::after {
-    width: 18px;
-    height: 18px;
-    animation: pulse 1s linear infinite;
+    color: white;
   }
 
   .title::before,
@@ -82,31 +74,11 @@ const StyledWrapper = styled.div`
     width: 16px;
     border-radius: 50%;
     left: 0px;
-    background-color: #00bfff;
+    background-color: white;
   }
 
-  .message,
-  .signin {
-    font-size: 14.5px;
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  .signin {
-    text-align: center;
-  }
-
-  .signin a:hover {
-    text-decoration: underline royalblue;
-  }
-
-  .signin a {
-    color: #00bfff;
-  }
-
-  .flex {
-    display: flex;
-    width: 100%;
-    gap: 6px;
+  .title::after {
+    animation: pulse 1s linear infinite;
   }
 
   .form label {
@@ -114,12 +86,12 @@ const StyledWrapper = styled.div`
   }
 
   .form label .input {
-    background-color: #333;
+    background-color: #1a2333;
     color: #fff;
     width: 100%;
-    padding: 20px 05px 05px 10px;
+    padding: 20px 5px 5px 10px;
     outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
+    border: 1px solid #2f3a4d;
     border-radius: 10px;
   }
 
@@ -146,19 +118,16 @@ const StyledWrapper = styled.div`
     font-weight: 600;
   }
 
-  .input {
-    font-size: medium;
-  }
-
   .submit {
     border: none;
     outline: none;
-    padding: 10px;
+    padding: 16px;
     border-radius: 10px;
     color: #fff;
-    font-size: 16px;
-    transform: 0.3s ease;
-    background-color: #00bfff;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #12a9db;
+    transition: 0.3s ease;
   }
 
   .submit:hover {
@@ -170,7 +139,6 @@ const StyledWrapper = styled.div`
       transform: scale(0.9);
       opacity: 1;
     }
-
     to {
       transform: scale(1.8);
       opacity: 0;
