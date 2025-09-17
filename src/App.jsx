@@ -2,7 +2,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { PiReadCvLogo } from "react-icons/pi";
 import Button from "./buttons/HeroBtn";
-import DeveloperProfile from "./buttons/MyCode";
+// import  heroImg from "../public/Images/heroInfo.png"
 
 const App = () => {
   return (
@@ -43,7 +43,10 @@ const App = () => {
             </span>
           </div>
         </div>
-        <div></div>
+        <div className="">
+         
+         
+        </div>
       </div>
     </div>
   );

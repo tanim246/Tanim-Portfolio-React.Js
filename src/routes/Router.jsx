@@ -1,9 +1,7 @@
-// import { createBrowserRouter, Navigate } from "react-router-dom";
-import { createBrowserRouter, Navigate } from "react-router";
-
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
-import Navber from "../components/Navber";
 import App from "../App";
+import Contact from "../components/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -16,19 +14,31 @@ export const router = createBrowserRouter([
       },
       {
         path: "/home",
-        element: <App />
+        element: <App />,
       },
       {
         path: "/about",
-        element: <div>about</div>,
+        element: <div>About Page</div>,
       },
       {
-        path: "/skill",
-        element: <div>skil</div>,
+        path: "/skills",
+        element: <div>Skills Page</div>,
+      },
+      {
+        path: "/experience",
+        element: <div>Experience Page</div>,
+      },
+      {
+        path: "/education",
+        element: <div>Education Page</div>,
+      },
+      {
+        path: "/projects",
+        element: <div>Projects Page</div>,
       },
       {
         path: "/contact",
-        element: <div>contact</div>,
+        element: <Contact />,
       },
     ],
   },
