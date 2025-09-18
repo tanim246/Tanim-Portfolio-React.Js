@@ -18,7 +18,7 @@ const About = () => {
           <span>
             <GiFlatStar />
           </span>
-          <span> Get In Touch</span>
+          <span>Available for new projects</span>
         </p>
       </div>
 
@@ -37,11 +37,10 @@ const About = () => {
       </p>
       <p className="mb-10 text-gray-400">
         I'm <span className="text-white font-semibold">Muhammad Tanim</span>, a
-        Web Developer with{" "}
-        <span className="text-teal-300">3 month+</span> of hands-on experience.
-        My specialty lies in JavaScript & React.js, along with building complete
-        end-to-end solutions using Next.js, Node.js, Express.js, MongoDB, and
-        MySQL.
+        Web Developer with <span className="text-teal-300">3 month+</span> of
+        hands-on experience. My specialty lies in JavaScript & React.js, along
+        with building complete end-to-end solutions using Next.js, Node.js,
+        Express.js, MongoDB, and MySQL.
       </p>
 
       {/* How I help */}
@@ -74,32 +73,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
-      {/* Technical Expertise */}
-      <h2 className="text-xl font-semibold mb-4">Technical Expertise</h2>
-      <div className="flex flex-wrap gap-3 mb-10">
-        {[
-          "React.js",
-          "Next.js",
-          "JavaScript",
-          "TypeScript",
-          "Redux",
-          "Tailwind CSS",
-          "Bootstrap",
-          "Node.js",
-          "Express.js",
-          "MongoDB",
-          "MySQL",
-          "REST APIs",
-          "Git",
-          "SEO",
-        ].map((tech) => (
-          <span className="px-4 py-1 border border-[#00d6c1] rounded-full text-sm">
-            {tech}
-          </span>
-        ))}
-      </div>
-
       {/* Project Highlights */}
       <h2 className="text-xl font-semibold mb-4">Project Highlights</h2>
       <div className="space-y-4 mb-10">
@@ -129,7 +102,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
       {/* Passion & Goal */}
       <div className="p-6 border border-teal-600 bg-[#0f1c2a] rounded-xl mb-10">
         <h3 className="font-bold text-teal-400 mb-2">🚀 My Passion & Goal</h3>
@@ -141,7 +113,7 @@ const About = () => {
         </p>
       </div>
 
-      {/* Contact Section */}
+      {/* Contact */}
       <h2 className="text-xl font-semibold mb-4">Let's Connect!</h2>
       <p className="text-gray-400 mb-6">
         Let's build something impactful together, feel free to reach out.

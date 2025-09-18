@@ -3,7 +3,7 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { PiReadCvLogo } from "react-icons/pi";
 import Button from "./buttons/HeroBtn";
 import Button2 from "./buttons/MyCode";
-import tanim from "../public/Images/myimg.jpg"
+import Tanim from "../public/Images/myimg.jpg"
 const App = () => {
   return (
     <div className=" max-w-6xl mx-auto ">
@@ -46,7 +46,7 @@ const App = () => {
         </div>
         {/* right part */}
         <div className="border-2 border-[#06b6c9] rounded-full p-4 mr-5 ">
-         <img src={tanim} alt="tanim" className="rounded-full" width="300px" />
+         <img src={Tanim} alt="tanim" className="rounded-full" width="300px" />
          
         </div>
       </div>
