@@ -10,7 +10,7 @@ const Navber = () => {
   return (
     <div className="p-6 sm:p-0">
       <nav className="flex justify-center border-2 border-[#0abbcf] mb-10  p-5 sm:max-w-4xl sm:mx-auto mt-2 sm:mt-7 rounded-full  bg-[#112836]">
-        <ul className="flex gap-8 text-white">
+        <ul className="flex px-6 sm:px-0 gap-8 text-white">
           <Link to="/home" className="flex items-center gap-2 cursor-pointer  font-semibold">
             <IoHomeSharp />
            <span className="hidden sm:block"> Home</span>

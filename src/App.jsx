@@ -16,10 +16,10 @@ const App = () => {
           </p>
           <p className="border border-[#18335c] bg-[#0e2330] w-55 text-center py-2 rounded-xl  "> ✨  Web developer </p>
           <p className="text-md sm:text-xl">JavaScript lover 🚀 | Engineering the Future of Web Technology</p>
-          <div className="flex gap-6 ">
+          <div className="flex gap-4  sm:gap-6 ">
             <div><Button /></div>
             <div>
-              <span><Button2 /></span>
+            <Button2 />
             </div>
           </div>
           <div className="flex text-2xl gap-4">

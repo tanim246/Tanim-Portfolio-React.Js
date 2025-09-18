@@ -8,7 +8,7 @@ import { GiFlatStar } from "react-icons/gi";
 
 const Contact = () => {
   return (
-    <div className="max-w-6xl pb-8 text-white mx-auto px-4 sm:px-8">
+    <div className="max-w-6xl pb-8 mb-10 text-white mx-auto px-4 sm:px-8">
       <div className="flex flex-col items-center gap-6 text-center sm:text-left">
         <p className="rounded-full flex justify-center items-center gap-3 border py-1 px-6 sm:px-10 border-[#0b4357] bg-[#0e2638] text-[#64e2f5]">
           <span>

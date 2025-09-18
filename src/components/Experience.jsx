@@ -6,7 +6,7 @@ import { MdOutlineTimeline } from "react-icons/md";
 
 const Experience = () => {
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto ">
       <div className="flex flex-col items-center gap-6 text-center sm:text-left">
         <p className="rounded-full flex justify-center items-center gap-3 border py-1 px-6 sm:px-10 border-[#0b4357] bg-[#0e2638] text-[#64e2f5]">
           <span>
@@ -25,7 +25,7 @@ const Experience = () => {
       </div>
       {/* card start */}
       {/* card no 1 */}
-      <div className="mt-18 flex flex-col gap-4 sm:flex-row  ">
+      <div className="mt-18 flex flex-col gap-4 mb-10 sm:flex-row  ">
         <div className="border space-y-4 border-[#0f718a] bg-[#192433] text-white  mx-6 sm:mx-1 py-4  px-4 rounded-xl ">
           <div className="">
             <h1 className="text-2xl font-bold">Full Stack Web Developer</h1>
