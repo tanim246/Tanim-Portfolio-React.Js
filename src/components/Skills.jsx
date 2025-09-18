@@ -203,6 +203,19 @@ const Skills = () => {
           </div>
         </div>
       </div>
+      {/* end part */}
+      <div className="flex flex-col gap-6 items-center mt-15">
+        <p className="text-[#9da3a2] text-xl px-6 text-center">
+          Ready to bring your vision to life with cutting-edge technology?
+        </p>
+        <a
+          href="#"
+          className="relative inline-block py-4 px-10 rounded-2xl bg-[#3787f0] font-semibold text-white 
+             transition duration-300 hover:shadow-[0_0_12px_#3787f0,0_0_50px_#18b5ad]"
+        >
+          Start a Project
+        </a>
+      </div>
     </div>
   );
 };

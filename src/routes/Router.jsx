@@ -4,6 +4,7 @@ import App from "../App";
 import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 import Skills from "../components/Skills";
+import About from "../components/About";
 
 export const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <div>About Page</div>,
+        element: <About />,
       },
       {
         path: "/skills",
